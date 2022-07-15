@@ -11,3 +11,7 @@ Redesigned intro page: https://github.com/ojas-sanghi/ix-work/blob/main/day2/hom
 
 ## Day 3 
 Fibonacci sequence: https://github.com/ojas-sanghi/ix-work/blob/main/day%203/index.js
+
+## Day 4
+Number guesser: https://github.com/ojas-sanghi/ix-work/tree/main/day4/homework/number_guesser
+Movie guesser: https://github.com/ojas-sanghi/ix-work/tree/main/day4/homework/movie_guesser
