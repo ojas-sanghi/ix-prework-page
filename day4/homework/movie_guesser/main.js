@@ -42,7 +42,13 @@ submitButton.addEventListener("click", (event) => {
     input.value = "";
     hintText.innerHTML = "";
     currentMovieIndex++;
+
     // check if over the bounds
+    if (currentMovieIndex == movies.length)
+    {
+      currentMovieIndex = 0;
+    }
+    
     updatePromptText();
   }
   else
