@@ -15,3 +15,6 @@ Fibonacci sequence: https://github.com/ojas-sanghi/ix-work/blob/main/day%203/ind
 ## Day 4
 Number guesser: https://github.com/ojas-sanghi/ix-work/tree/main/day4/homework/number_guesser  
 Movie guesser: https://github.com/ojas-sanghi/ix-work/tree/main/day4/homework/movie_guesser
+
+## Day 5
+Task list: https://github.com/ojas-sanghi/ix-work/tree/main/day5/homework

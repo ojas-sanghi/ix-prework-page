@@ -23,11 +23,11 @@ class Task {
 submitBtn.addEventListener("click", (event) => {
   let newTask = new Task(taskInput.value);
   tasks.push(newTask);
-  crateTasksList();
+  createTasksList();
   taskInput.value = "";
 });
 
-function crateTasksList() {
+function createTasksList() {
   tableBody.innerHTML = "";
 
   tasks.forEach((task) => {
@@ -61,5 +61,5 @@ function crateTasksList() {
 
 function onToggleBtnClick(b, e) {
   tasks[b.id].toggleComplete();
-  crateTasksList();
+  createTasksList();
 }
