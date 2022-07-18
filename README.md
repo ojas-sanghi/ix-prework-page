@@ -18,3 +18,6 @@ Movie guesser: https://github.com/ojas-sanghi/ix-work/tree/main/day4/homework/mo
 
 ## Day 5
 Task list: https://github.com/ojas-sanghi/ix-work/tree/main/day5/homework
+
+## Day 6
+React Library/Book List: https://github.com/ojas-sanghi/ix-work/blob/main/day6/homework-book-list/src/App.js
