@@ -21,3 +21,7 @@ Task list: https://github.com/ojas-sanghi/ix-work/tree/main/day5/homework
 
 ## Day 6
 React Library/Book List: https://github.com/ojas-sanghi/ix-work/blob/main/day6/homework-book-list/src/App.js
+
+## Day 7
+Task list: https://github.com/ojas-sanghi/ix-work/blob/main/day7/homework/hw-task-list/src/App.js  
+Book list: https://github.com/ojas-sanghi/ix-work/blob/main/day7/homework/hw-library/src/App.js
