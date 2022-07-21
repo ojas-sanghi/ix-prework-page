@@ -35,7 +35,7 @@ export default function App() {
   function onTaskRemove(task)
   {
     const filteredTasks = tasks.filter((t) => {
-      return t.id != task.id;
+      return t.id !== task.id;
     })
     setTasks(filteredTasks);
   }

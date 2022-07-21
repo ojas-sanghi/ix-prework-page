@@ -26,8 +26,9 @@ export default function TaskTable(props) {
           {props.tasks.map((task) => (
             <tr key={task.id}>
               <td>{task.name}</td>
-              <td>{task.complete ? "Complete" : "Not Complete"}</td>
+              <td>{task.complete ? "bi bi-circle-fill" : "bi bi-circle"}</td>
               <td>
+                <i className="bi bi-trash"></i>
                 <button
                   onClick={(e) => {
                     toggleTaskComplete(task)
