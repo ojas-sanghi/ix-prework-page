@@ -8,6 +8,7 @@ import TaskTable from "./components/TaskTable";
 import taskService from "./services/task.service";
 
 export default function App() {
+
   useEffect(() => {
     fetchTasks();
   }, []);
