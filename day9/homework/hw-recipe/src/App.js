@@ -1,57 +1,57 @@
 import React, { useEffect, useState } from "react";
-import BookInput from "./components/BookInput";
-import BookTable from "./components/BookTable";
+import RecipeInput from "./components/RecipeInput";
+import RecipeTable from "./components/RecipeTable";
 
-import service from "./services/book.service";
+import service from "./services/recipe.service";
 
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function App() {
 
   useEffect(() => {
-    fetchBooks();
+    fetchRecipes();
   }, [])
 
-  const [books, setBooks] = useState([]);
+  const [recipes, setRecipes] = useState([]);
 
-  async function fetchBooks()
+  async function fetchRecipes()
   {
     try {
-      const books = await service.readBooks();
-      setBooks(books);
+      const recipes = await service.readRecipes();
+      setRecipes(recipes);
     } catch (err)
     {
       console.log(err);
     }
   }
 
-  function onBookCreated(book) {
+  function onRecipeCreated(recipe) {
     try {
-      service.createBook(book);
-      let newBooks = books.concat([book]);
-      setBooks(newBooks);
+      service.createRecipe(recipe);
+      let newRecipes = recipes.concat([recipe]);
+      setRecipes(newRecipes);
     } catch (err) {
       console.log(err);
     }
   }
 
-  function onBookRemove(book) {
+  function onRecipeRemove(recipe) {
     try {
-      service.deleteBook(book);
+      service.deleteRecipe(recipe);
 
-      let newBooks = books.filter((b) => {
-        return b.id != book.id;
+      let newRecipes = recipes.filter((b) => {
+        return b.id != recipe.id;
       });
-      setBooks(newBooks);
+      setRecipes(newRecipes);
     } catch (err) {}
   }
 
   return (
     <div>
       <div className="container mt-5">
-        <h1>Add Book</h1>
-        <BookInput onBookCreated={onBookCreated}></BookInput>
-        <BookTable books={books} onBookRemove={onBookRemove}></BookTable>
+        <h1>Add Recipe</h1>
+        <RecipeInput onRecipeCreated={onRecipeCreated}></RecipeInput>
+        <RecipeTable recipes={recipes} onRecipeRemove={onRecipeRemove}></RecipeTable>
       </div>
     </div>
   );
