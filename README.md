@@ -28,3 +28,7 @@ Book list: https://github.com/ojas-sanghi/ix-work/blob/main/day7/homework/hw-lib
 
 ## Day 8
 API-interacting page: https://github.com/ojas-sanghi/ix-work/tree/main/day8/homework
+
+## Day 9
+React-firebase library: https://github.com/ojas-sanghi/ix-work/tree/main/day9/homework/hw-library
+React-firebase recipe app: https://github.com/ojas-sanghi/ix-work/tree/main/day9/homework/hw-recipe
